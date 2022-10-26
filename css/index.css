@@ -114,13 +114,12 @@ p, h1, h2, h3, button, a {
 .title-container{
     max-width: 100vw;
     text-align: center;
-    margin: auto 0;
+    margin: auto;
 }
 
 .title-info-container{
-    max-height: 200px;
     width: 100vw;
-    margin-top: 10vh;
+    margin-top: 15vh;
 }
 
 .title-text{
@@ -152,11 +151,27 @@ p, h1, h2, h3, button, a {
     text-align: center;
 }
 
-/* Service buttons on the main screen */
+/* Service section on the main screen */
+.service-header-container{
+    text-align: center;
+    width: 100%;
+    margin-top: 15%;
+}
 
+.service-buttons-container{
+    text-align: center;
+    background-size: cover;
+}
 
+.service-button{
+    text-decoration: none;
+    border: none;
+}
 
-
+.button-bkg-image{
+    max-width: 100%;
+    height: 100%;
+}
 
 
 
@@ -175,5 +190,8 @@ p, h1, h2, h3, button, a {
     }
     .bottom-navbar{
         margin-top: 8px
+    }
+    .title-text-container{
+        margin-top: 100px;
     }
 }
