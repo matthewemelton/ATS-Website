@@ -8,8 +8,8 @@
     <link rel="shortcut icon" href="Assets/Logos/ATSLogoWhite.png" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
 
     <!-- Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg" style="min-height: 60px; display: block;">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg" style="min-height: 60px; display: block; position: sticky;">
         <div class="top-navbar" style="width: 100%; margin-top: 5px;">
             <div class="navbar-number-container" style="min-width: 200px;">
                 <img class="navbar-phone invert" src="Assets/Icons/Smartphone.png" alt="phone icon">
@@ -77,36 +77,53 @@
 
     <section id="title">
         <div class="title-container">
-            <div class="title-info-container row">
-                <div class="title-image-container col-md-6">
+                <div class="title-image-container">
                     <img class="title-image" src="Assets/Images/ATS%20Website%20Title.png" alt="Title">
                 </div>
-                <div class="title-text-container col-md-6">
-                    <h1 class="title-text vertical-center">Whatever your need, we'd be honored to help you!</h1>
+                <div class="title-text-container">
+                    <h1 class="title-text">Whatever your need, we'd be honored to help you!</h1>
                 </div>
-            </div>
         </div>
     </section>
 
     <section id="main-service-buttons">
         <div class="service-header-container">
-            <h2>Our Services</h2>
+            <h1>Our Services</h1>
         </div>
-        <div class="service-buttons-container row">
-            <div class="col-sm-4" >
-                <button class="service-button">
-                    <img class="button-bkg-image" src="Assets/Images/contractor.jpg" alt="General Contracting" />
-                </button>
+        <div class="service-buttons-container">
+            <div class="row" style="width: 100%; text-align: center; margin-left: 0.05%;">
+                <div class="service-button-container-single col-lg-4">
+                    <div class="service-button-container" style="background-image: url(/Assets/Images/contractor.png);">
+                        <button class="service-button">General<br>Contracting</button>
+                    </div>
+                </div>
+                <div class="service-button-container-single col-lg-4">
+                    <div class="service-button-container" style="background-image: url(/Assets/Images/electrician.jpg);">
+                        <button class="service-button">Electrical<br>Services</button>
+                    </div>
+                </div>
+                <div class="service-button-container-single col-lg-4">
+                    <div class="service-button-container" style="background-image: url(/Assets/Images/plumbing.jpg);">
+                        <button class="service-button">Plumbing<br>Services</button>
+                    </div>
+                </div>
             </div>
-            <div class="service-button col-sm-4">
-                <button class="service-button">
-                    <img class="button-bkg-image" src="Assets/Images/electrician.jpg" alt="General Contracting" />
-                </button>
-            </div>
-            <div class="service-button col-sm-4">
-                <button class="service-button">
-                    <img class="button-bkg-image" src="Assets/Images/plumbing.jpg" alt="General Contracting" />
-                </button>
+            <div class="row" style="width: 100%; text-align: center; margin: 15px 0.05% auto auto;">
+                <div class="service-button-container-single col-lg-4">
+                    <div class="service-button-container" style="background-image: url();">
+                        <button class="service-button">Heating & Air</button>
+                    </div>
+                </div>
+                <div class="service-button-container-single col-lg-4">
+                    <div class="service-button-container" style="background-image: url();">
+                        <button class="service-button">Fiber &<br>Communication</button>
+                    </div>
+                </div>
+                <div class="service-button-container-single col-lg-4">
+                    <div class="service-button-container" style="background-image: url();">
+                        <button class="service-button">Painting</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
