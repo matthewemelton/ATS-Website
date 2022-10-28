@@ -39,7 +39,7 @@ p, h1, h2, h3, button, a {
     width: 100%;
     margin: 12px auto auto auto;
     min-height: 40px;
-    background: rgba(0, 0, 0, 0.32  );
+    background: rgba(0, 0, 0, 0.32);
 }
 
 .service-navbar{
@@ -170,7 +170,6 @@ p, h1, h2, h3, button, a {
 /* Service section on the main screen */
 
 #service-menu{
-    margin-top: 5vh;
     width: 100vw;
     height: 60vh;
     display: flex;
@@ -189,8 +188,8 @@ p, h1, h2, h3, button, a {
     opacity: 0.3;
 }
 
-#service-links-container:hover +     .service-background-pattern{
-    opacity: 0.1;
+#service-links-container:hover + .service-background-pattern{
+    opacity: 0.0;
     color: white;
 }
 
@@ -207,13 +206,26 @@ p, h1, h2, h3, button, a {
     transition: opacity 400ms ease;
 }
 
+#service-menu-container{
+    width: 100vw;
+}
 .service-background-pattern{
-    height: 100%;
-    width: 65%;
+    height: 50vh;
+    width: 60vw;
 
+    margin: 0 auto;
     background-image: url(/Assets/Logos/ATSLogoWhite.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    opacity: 0.15;
     transition: opacity 400ms ease;
+}
+
+#menu-content-container{
+    padding-left: 30px;
+    font-size: x-large;
+    color: white;
 }
 
 #main-service-buttons{
