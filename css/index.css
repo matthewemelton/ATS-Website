@@ -214,7 +214,7 @@ p, h1, h2, h3, button, a {
     width: 60vw;
 
     margin: 0 auto;
-    background-image: url(/Assets/Logos/ATSLogoWhite.png);
+    background-image: url("Assets/Logos/ATSLogoWhite.png");
     background-size: contain;
     background-repeat: no-repeat;
     filter: grayscale(100%);
