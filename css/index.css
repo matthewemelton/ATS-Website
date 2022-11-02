@@ -195,6 +195,11 @@ p, h1, h2, h3, button, a {
 
 #service-links-container:hover > .service-menu-link:hover{
     opacity: 1;
+    background-image: linear-gradient(45deg, #ff1a1a, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 .service-menu-link{
@@ -203,7 +208,7 @@ p, h1, h2, h3, button, a {
     display: block;
     text-decoration: none;
     padding: clamp(0.25rem, 0.5vw, 1rem);
-    transition: opacity 400ms ease;
+    transition: opacity 400ms ease, background-color 400ms ease;
 }
 
 #service-menu-container{
@@ -214,7 +219,7 @@ p, h1, h2, h3, button, a {
     width: 60vw;
 
     margin: 0 auto;
-    background-image: url("Assets/Logos/ATSLogoWhite.png");
+    background-image: url(/Assets/Logos/ATSLogoWhite.png);
     background-size: contain;
     background-repeat: no-repeat;
     filter: grayscale(100%);
@@ -226,6 +231,7 @@ p, h1, h2, h3, button, a {
     padding-left: 30px;
     font-size: x-large;
     color: white;
+    opacity: 1;
 }
 
 #main-service-buttons{
@@ -241,8 +247,19 @@ p, h1, h2, h3, button, a {
     padding-top: 4vh;
 }
 
+.service-menu-text-container{
+    max-width: 50vw;
+}
 
+.service-description{
+    max-width: 60vw;
+}
 
+#request-service-container{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
 
 
 

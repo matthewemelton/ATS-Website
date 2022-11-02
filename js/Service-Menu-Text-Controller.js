@@ -1,107 +1,200 @@
 
-gcDescription = "<div>\n" +
-    "    <h2>General Contracting</h2>\n" +
-    "    <p>Whatever your project we would love to help! we offer a variety of services including:</p>\n" +
-    "    <li>\n" +
-    "        <ul>New Home Construction</ul>\n" +
-    "        <ul>Deck Construction</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
-    "    </li>\n" +
-    "</div>";
+gcDescription = "<div class=\"service-description\">\n" +
+    "                        <h2>\n" +
+    "                            Whatever your need, we want to help!\n" +
+    "                            We have experts in the trade ready to make your project happen!\n" +
+    "                        </h2>\n" +
+    "                        <h3 style='margin-bottom: 3vh;'>\n" +
+    "                            We offer services such as:\n" +
+    "                        </h3>\n" +
+    "                        <ol style='padding-top: 20px;'>\n" +
+    "                            <ul>Remodeling</ul>\n" +
+    "                            <ul>Home Repair</ul>\n" +
+    "                            <ul>New Additions</ul>\n" +
+    "                            <ul>New Developments</ul>\n" +
+    "                        </ol>\n" +
+    "                    </div>";
 
-electricalDescription = "electrical";
+electricalDescription = "<div class=\"service-description\">\n" +
+    "                        <h2>\n" +
+    "                            Your electrical needs are our priority!\n" +
+    "                            We have trained and master electricians ready to serve you\n" +
+    "                        </h2>\n" +
+    "                        <h3 style='margin-bottom: 3vh;'>\n" +
+    "                            Our electrical services:\n" +
+    "                        </h3>\n" +
+    "                        <ol style='padding-top: 20px;'>\n" +
+    "                            <ul>Remodeling</ul>\n" +
+    "                            <ul>Home Repair</ul>\n" +
+    "                            <ul>New Additions</ul>\n" +
+    "                            <ul>New Developments</ul>\n" +
+    "                        </ol>\n" +
+    "                    </div>";
 
-plumbingDescription = "Plumbing";
+plumbingDescription = "<div class=\"service-description\">\n" +
+    "                        <h2>\n" +
+    "                            Whatever your need, we want to help!\n" +
+    "                            We have experts in the trade ready to make your project happen!\n" +
+    "                        </h2>\n" +
+    "                        <h3 style='margin-bottom: 3vh;'>\n" +
+    "                            We offer services such as:\n" +
+    "                        </h3>\n" +
+    "                        <ol style='padding-top: 20px;'>\n" +
+    "                            <ul>Remodeling</ul>\n" +
+    "                            <ul>Home Repair</ul>\n" +
+    "                            <ul>New Additions</ul>\n" +
+    "                            <ul>New Developments</ul>\n" +
+    "                        </ol>\n" +
+    "                    </div>";
 
-HVACDescription = "Heating & Air";
+HVACDescription = "<div class=\"service-description\">\n" +
+    "                        <h2>\n" +
+    "                            Whatever your need, we want to help!\n" +
+    "                            We have experts in the trade ready to make your project happen!\n" +
+    "                        </h2>\n" +
+    "                        <h3 style='margin-bottom: 3vh;'>\n" +
+    "                            We offer services such as:\n" +
+    "                        </h3>\n" +
+    "                        <ol style='padding-top: 20px;'>\n" +
+    "                            <ul>Remodeling</ul>\n" +
+    "                            <ul>Home Repair</ul>\n" +
+    "                            <ul>New Additions</ul>\n" +
+    "                            <ul>New Developments</ul>\n" +
+    "                        </ol>\n" +
+    "                    </div>";
 
-fiberCommunication = "fiber";
+fiberCommunication = "<div class=\"service-description\">\n" +
+    "                        <h2>\n" +
+    "                            Whatever your need, we want to help!\n" +
+    "                            We have experts in the trade ready to make your project happen!\n" +
+    "                        </h2>\n" +
+    "                        <h3 style='margin-bottom: 3vh;'>\n" +
+    "                            We offer services such as:\n" +
+    "                        </h3>\n" +
+    "                        <ol style='padding-top: 20px;'>\n" +
+    "                            <ul>Remodeling</ul>\n" +
+    "                            <ul>Home Repair</ul>\n" +
+    "                            <ul>New Additions</ul>\n" +
+    "                            <ul>New Developments</ul>\n" +
+    "                        </ol>\n" +
+    "                    </div>";
 
-paintingDescription = "painting";
+paintingDescription = "<div class=\"service-description\">\n" +
+    "                        <h2>\n" +
+    "                            Whatever your need, we want to help!\n" +
+    "                            We have experts in the trade ready to make your project happen!\n" +
+    "                        </h2>\n" +
+    "                        <h3 style='margin-bottom: 3vh;'>\n" +
+    "                            We offer services such as:\n" +
+    "                        </h3>\n" +
+    "                        <ol style='padding-top: 20px;'>\n" +
+    "                            <ul>Remodeling</ul>\n" +
+    "                            <ul>Home Repair</ul>\n" +
+    "                            <ul>New Additions</ul>\n" +
+    "                            <ul>New Developments</ul>\n" +
+    "                        </ol>\n" +
+    "                    </div>";
 
-$("#gc-link").hover(
+$(function (){
+// general contracting link
+
+$("#gc-link").on("mouseenter",
 
     // when the element is hovered
     function (){
         $("#menu-content-container").html(gcDescription);
-    },
+        $().animate({
+           opacity: '0.2' 
+        });
+    });
 
+$("#gc-link").on("mouseleave",
     // when the element is not hovered
     function (){
-        $("#menu-content-container").find( "div" ).last().remove();
+        $("#menu-content-container").empty();
         $("#menu-content-container").html($("<div class=\"service-background-pattern\"></div>"));
-    }
-);
+    });
 
-$("#electrical-link").hover(
+
+// electrical link
+
+$("#electrical-link").on("mouseenter",
 
     // when the element is hovered
     function (){
-        $("#menu-content-container").text(electricalDescription);
-    },
+        $("#menu-content-container").html(electricalDescription);
+    });
 
+$("#electrical-link").on("mouseleave",
     // when the element is not hovered
     function (){
-        $("#menu-content-container").find( "div" ).last().remove();
+        $("#menu-content-container").empty();
         $("#menu-content-container").html($("<div class=\"service-background-pattern\"></div>"));
-    }
-);
+    });
 
-$("#plumbing-link").hover(
+// plumbing link
+
+$("#plumbing-link").on("mouseenter",
 
     // when the element is hovered
     function (){
-        $("#menu-content-container").text(plumbingDescription);
-    },
+        $("#menu-content-container").html(plumbingDescription);
+    });
 
+$("#plumbing-link").on("mouseleave",
     // when the element is not hovered
     function (){
-        $("#menu-content-container").find( "div" ).last().remove();
+        $("#menu-content-container").empty();
         $("#menu-content-container").html($("<div class=\"service-background-pattern\"></div>"));
-    }
-);
+    });
 
-$("#HVAC-link").hover(
+// Heating and Air Link
+
+$("#HVAC-link").on("mouseenter",
 
     // when the element is hovered
     function (){
-        $("#menu-content-container").text(HVACDescription);
-    },
+        $("#menu-content-container").html(HVACDescription);
+    });
 
+$("#HVAC-link").on("mouseleave",
     // when the element is not hovered
     function (){
-        $("#menu-content-container").find( "div" ).last().remove();
+        $("#menu-content-container").empty();
         $("#menu-content-container").html($("<div class=\"service-background-pattern\"></div>"));
-    }
-);
+    });
 
-$("#Fiber-link").hover(
+// Fiber and Controls Link
+
+$("#Fiber-link").on("mouseenter",
 
     // when the element is hovered
     function (){
-        $("#menu-content-container").text(fiberCommunication);
-    },
+        $("#menu-content-container").html(fiberCommunication);
+    });
 
+$("#Fiber-link").on("mouseleave",
     // when the element is not hovered
     function (){
-        $("#menu-content-container").find( "div" ).last().remove();
+        $("#menu-content-container").empty();
         $("#menu-content-container").html($("<div class=\"service-background-pattern\"></div>"));
-    }
-);
+    });
 
-$("#Painting-link").hover(
+// Painting Link
+
+$("#Painting-link").on("mouseenter",
 
     // when the element is hovered
     function (){
-        $("#menu-content-container").text(paintingDescription);
-    },
+        $("#menu-content-container").html(paintingDescription);
+    });
 
+$("#Painting-link").on("mouseleave",
     // when the element is not hovered
     function (){
-        $("#menu-content-container").find( "div" ).last().remove();
+        $("#menu-content-container").empty();
         $("#menu-content-container").html($("<div class=\"service-background-pattern\"></div>"));
-    }
-);
+    });
+});
+
 
