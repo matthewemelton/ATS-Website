@@ -1,65 +1,46 @@
 
 gcDescription = "<div id='service-menu-text-content'>\n" +
-    "    <h2>General Contracting</h2>\n" +
-    "    <p>Whatever your project we would love to help! we offer a variety of services including:</p>\n" +
-    "        <ul>New Home Construction</ul>\n" +
-    "        <ul>Remodels</ul>\n" +
-    "        <ul>Construction Planning</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
+    "    <h2 id='service-menu-text-header'>General Contracting</h2>\n" +
+    "    <p>We offer a wide variety of contracting services, from home remodels to small projects we have you covered.</p>\n" +
+    "    <button class='redButton' style='margin: 1vw;' onclick=\"parent.location='https://clienthub.getjobber.com/client_hubs/3403509f-5b25-49d4-92f2-41ef1eeeba5d/public/work_request/new'\">Get a Quote</button>" +
+    "    <button onclick=\"parent.location='./Contracting.html'\" class='redButton' style='margin: 1vw;'>Learn More</button> " +
     "</div>";
 
 electricalDescription = "<div id='service-menu-text-content'>\n" +
-    "    <h2>Electrical</h2>\n" +
-    "    <p>We offer both residential and commercial electrical services. " +
-    "       We have master electricians who have been in the trade for over 20 years!" +
-    "       Our services include:" +
-    "    </p>\n" +
-    "        <ul>New Home Construction</ul>\n" +
-    "        <ul>Deck Construction</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
+    "    <h2 id='service-menu-text-header'>Electrical</h2>\n" +
+    "    <p>With professionals in the electrical industry, we guarantee the utmost quality of service." +
+    "    Whether you have a small residential electrical project or a commercial project, we are here to get the job done.</p>\n" +
+    "    <button class='redButton' style='margin: 1vw;' onclick=\"parent.location='https://clienthub.getjobber.com/client_hubs/3403509f-5b25-49d4-92f2-41ef1eeeba5d/public/work_request/new'\">Get a Quote</button>" +
+    "    <button onclick=\"parent.location='./Electrical.html'\" class='redButton' style='margin: 1vw;'>Learn More</button> " +
     "</div>";
 
 plumbingDescription = "<div id='service-menu-text-content'>\n" +
-    "    <h2>Plumbing</h2>\n" +
+    "    <h2 id='service-menu-text-header'>Plumbing</h2>\n" +
     "    <p>Whatever your project we would love to help! we offer a variety of services including:</p>\n" +
-    "        <ul>New Home Construction</ul>\n" +
-    "        <ul>Deck Construction</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
+    "    <button class='redButton' style='margin: 1vw;' onclick=\"parent.location='https://clienthub.getjobber.com/client_hubs/3403509f-5b25-49d4-92f2-41ef1eeeba5d/public/work_request/new'\">Get a Quote</button>" +
+    "    <button onclick=\"parent.location='./Plumbing.html'\" class='redButton' style='margin: 1vw;'>Learn More</button> " +
     "</div>";
 
 HVACDescription = "<div id='service-menu-text-content'>\n" +
-    "    <h2>Heating & Air Conditioning</h2>\n" +
+    "    <h2 id='service-menu-text-header'>Heating & Air</h2>\n" +
     "    <p>Whatever your project we would love to help! we offer a variety of services including:</p>\n" +
-    "        <ul>New Home Construction</ul>\n" +
-    "        <ul>Deck Construction</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
+    "    <button class='redButton' style='margin: 1vw;' onclick=\"parent.location='https://clienthub.getjobber.com/client_hubs/3403509f-5b25-49d4-92f2-41ef1eeeba5d/public/work_request/new'\">Get a Quote</button>" +
+    "    <button onclick=\"parent.location='./HVAC.html'\" class='redButton' style='margin: 1vw;'>Learn More</button> " +
     "</div>";
 
 fiberCommunication = "<div id='service-menu-text-content'>\n" +
-    "    <h2>Fiber & Communications</h2>\n" +
+    "    <h2 id='service-menu-text-header'>General Contracting</h2>\n" +
     "    <p>Whatever your project we would love to help! we offer a variety of services including:</p>\n" +
-    "        <ul>New Home Construction</ul>\n" +
-    "        <ul>Deck Construction</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
+    "    <button class='redButton' style='margin: 1vw;' onclick=\"parent.location='https://clienthub.getjobber.com/client_hubs/3403509f-5b25-49d4-92f2-41ef1eeeba5d/public/work_request/new'\">Get a Quote</button>" +
+    "    <button onclick=\"parent.location='./Fiber.html'\" class='redButton' style='margin: 1vw;'>Learn More</button> " +
     "</div>";
 
 paintingDescription = "<div id='service-menu-text-content'>\n" +
-    "    <h2>Painting</h2>\n" +
-    "    <p>Whatever your project we would love to help! we offer a variety of services including:</p>\n" +
-    "        <ul>New Home Construction</ul>\n" +
-    "        <ul>Deck Construction</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
-    "        <ul>Another Service Here</ul>\n" +
+    "    <h2 id='service-menu-text-header'>Painting</h2>\n" +
+    "    <p>New renovation? Exterior paint job? Or maybe you want to change the colors in your house?" +
+    "    We have painters ready to help make your space pop with color!</p>\n" +
+    "    <button class='redButton' style='margin: 1vw;' onclick=\"parent.location='https://clienthub.getjobber.com/client_hubs/3403509f-5b25-49d4-92f2-41ef1eeeba5d/public/work_request/new'\">Get a Quote</button>" +
+    "    <button onclick=\"parent.location='./Painting.html'\" class='redButton' style='margin: 1vw;'>Learn More</button> " +
     "</div>";
 
 if(screen.width > 800) {
@@ -139,6 +120,19 @@ if(screen.width > 800) {
         //     $("#menu-content-container").find( "div" ).last().remove();
         //     $("#menu-content-container").html($("<div class=\"service-background-pattern\"></div>"));
         // }
+    );
+
+    $("#service-menu-container").hover(
+        // when the element is hovered
+        function () {
+
+        },
+
+        // when the element is not hovered
+        function (){
+            $("#menu-content-container").find( "div" ).last().remove();
+            $("#menu-content-container").html($("<div class=\"service-background-pattern\"></div>"));
+        }
     );
 }
 
